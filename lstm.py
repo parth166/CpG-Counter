@@ -52,7 +52,7 @@ def is_valid_input(inp):
 
 def process_input(inp):
     cleaned_string = re.sub(r'[^a-zA-Z]', '', inp)
-
+    cleaned_string = cleaned_string.upper()
     alphabet = 'NACGT'
     dna2int = { a: i for a, i in zip(alphabet, range(5))}
 
